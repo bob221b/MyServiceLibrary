@@ -1,0 +1,7 @@
+C:\mydata\MyProjectsWCF\MyServiceLibrary\MyServiceLibrary\bin\Debug\MyServiceLibrary.dll.config
+C:\mydata\MyProjectsWCF\MyServiceLibrary\MyServiceLibrary\bin\Debug\MyServiceLibrary.dll
+C:\mydata\MyProjectsWCF\MyServiceLibrary\MyServiceLibrary\bin\Debug\MyServiceLibrary.pdb
+C:\mydata\MyProjectsWCF\MyServiceLibrary\MyServiceLibrary\obj\Debug\MyServiceLibrary.csprojAssemblyReference.cache
+C:\mydata\MyProjectsWCF\MyServiceLibrary\MyServiceLibrary\obj\Debug\MyServiceLibrary.csproj.CoreCompileInputs.cache
+C:\mydata\MyProjectsWCF\MyServiceLibrary\MyServiceLibrary\obj\Debug\MyServiceLibrary.dll
+C:\mydata\MyProjectsWCF\MyServiceLibrary\MyServiceLibrary\obj\Debug\MyServiceLibrary.pdb

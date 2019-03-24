@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyServiceLibrary", "MyServiceLibrary\MyServiceLibrary.csproj", "{4B173BFF-0CF7-4DCB-996E-7CC2B0C7E05E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyBulkServiceHost", "MyBulkServiceHost\", "{DEA869F6-FF68-4251-A7BA-C99B026980A6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{4b173bff-0cf7-4dcb-996e-7cc2b0c7e05e}|MyServiceLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54503"
+		Debug.AspNetCompiler.PhysicalPath = "MyBulkServiceHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54503\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54503"
+		Release.AspNetCompiler.PhysicalPath = "MyBulkServiceHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54503\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54503"
+		SlnRelativePath = "MyBulkServiceHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyBulkClient", "MyBulkClient\", "{6FA964F1-81AD-44B4-A3A9-FD58AC7CD640}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54558"
+		Debug.AspNetCompiler.PhysicalPath = "MyBulkClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54558\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54558"
+		Release.AspNetCompiler.PhysicalPath = "MyBulkClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54558\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54558"
+		SlnRelativePath = "MyBulkClient\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{DEA869F6-FF68-4251-A7BA-C99B026980A6} = {DEA869F6-FF68-4251-A7BA-C99B026980A6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B173BFF-0CF7-4DCB-996E-7CC2B0C7E05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B173BFF-0CF7-4DCB-996E-7CC2B0C7E05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B173BFF-0CF7-4DCB-996E-7CC2B0C7E05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B173BFF-0CF7-4DCB-996E-7CC2B0C7E05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA869F6-FF68-4251-A7BA-C99B026980A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA869F6-FF68-4251-A7BA-C99B026980A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA869F6-FF68-4251-A7BA-C99B026980A6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA869F6-FF68-4251-A7BA-C99B026980A6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6FA964F1-81AD-44B4-A3A9-FD58AC7CD640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA964F1-81AD-44B4-A3A9-FD58AC7CD640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA964F1-81AD-44B4-A3A9-FD58AC7CD640}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA964F1-81AD-44B4-A3A9-FD58AC7CD640}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58556AB4-9B5D-4FBD-848A-012AB8661766}
+	EndGlobalSection
+EndGlobal

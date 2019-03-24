@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MyBulkService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54503/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54503/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54503/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MyServiceLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMyBulkService_GetDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMyBulkService_GetDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyBulkService_GetResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResult" />
+  </wsdl:message>
+  <wsdl:message name="IMyBulkService_GetResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMyBulkService_GetResult1_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResult1" />
+  </wsdl:message>
+  <wsdl:message name="IMyBulkService_GetResult1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResult1Response" />
+  </wsdl:message>
+  <wsdl:message name="IMyBulkService_GetAllContries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllContries" />
+  </wsdl:message>
+  <wsdl:message name="IMyBulkService_GetAllContries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllContriesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMyBulkService">
+    <wsdl:operation name="GetDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyBulkService/GetDetails" message="tns:IMyBulkService_GetDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyBulkService/GetDetailsResponse" message="tns:IMyBulkService_GetDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyBulkService/GetResult" message="tns:IMyBulkService_GetResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyBulkService/GetResultResponse" message="tns:IMyBulkService_GetResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResult1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyBulkService/GetResult1" message="tns:IMyBulkService_GetResult1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyBulkService/GetResult1Response" message="tns:IMyBulkService_GetResult1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMyBulkService/GetAllContries" message="tns:IMyBulkService_GetAllContries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMyBulkService/GetAllContriesResponse" message="tns:IMyBulkService_GetAllContries_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMyBulkService" type="tns:IMyBulkService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDetails">
+      <soap:operation soapAction="http://tempuri.org/IMyBulkService/GetDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResult">
+      <soap:operation soapAction="http://tempuri.org/IMyBulkService/GetResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResult1">
+      <soap:operation soapAction="http://tempuri.org/IMyBulkService/GetResult1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContries">
+      <soap:operation soapAction="http://tempuri.org/IMyBulkService/GetAllContries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyBulkService">
+    <wsdl:port name="BasicHttpBinding_IMyBulkService" binding="tns:BasicHttpBinding_IMyBulkService">
+      <soap:address location="http://localhost:54503/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
